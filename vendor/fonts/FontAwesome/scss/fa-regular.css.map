@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "mappings": "AAAA;;;GAGG,AAGH,UAUC,CATC,WAAW,CAAE,qBAAqB,CAClC,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,GAAG,CAChB,GAAG,CAAE,qCAA0C,CAC/C,GAAG,CAAE,+SAI+D,CAGtE,IAAK,CACH,WAAW,CAAE,qBAAqB,CAClC,WAAW,CAAE,GAAG",
+  "sources": [
+    "fa-regular.scss"
+  ],
+  "names": [],
+  "file": "fa-regular.css"
+}
