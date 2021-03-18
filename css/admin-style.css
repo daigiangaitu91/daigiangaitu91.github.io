@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900,900i&subset=latin-ext');
+@import "../fonts/FontAwesome/scss/fa-solid.css";
+@import "../fonts/FontAwesome/scss/fa-regular.css";
+@import "../fonts/FontAwesome/scss/fa-brands.css";
+@import "../fonts/FontAwesome/scss/fontawesome.css";
+
+.fa, .fas, .far, .fal, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+body{
+	font: 400 1rem/1rem "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #f8f8f8;
+    padding-bottom: 50px;
+    position: relative;
+    min-height: 100%;
+}
+header#main{
+	position: fixed;
+	width: 100%;
+	z-index: 1000
+}
+header#main .navbar-default{
+	border: none;
+    box-shadow: 0 0 20px #eee;
+    background: #fff;
+    padding: 0;
+}
+header#main .navbar-header{
+	position: relative;
+	background: #fff;
+	height: 50px;
+}
+header#main .navbar-header .menu-button{
+	width: 57px;
+	background-color: #f8f8f8;
+	float: left;
+	text-align: center;
+}
+header#main .navbar-header .navbar-brand.logo{
+	float: none;
+    padding: 0;
+    margin: 0;
+}
+header#main .navbar-header .navbar-brand.logo img{
+	height: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+header#main .navbar-header .menu-button .sidebar-toggle{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+}
+
+header#main .navbar-header .menu-button .sidebar-toggle:before {    
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    vertical-align: -.125em;
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+header#main .navbar-header .menu-button .sidebar-toggle.maximize:before{
+	content:'\f053';
+}
+
+header#main .navbar-header .menu-button .sidebar-toggle.minimize:before{
+	content:'\f054';
+}
+
+.navbar-nav.navbar-right li.avatar {
+    width: 100px;
+    text-align: center;
+}
+.navbar-nav.navbar-right li a {
+    padding: 0 15px;
+    line-height: 50px;
+}
+.navbar-nav>li {
+    border-left: 1px solid #ddd;
+}
+.navbar-nav.navbar-right .dropdown-menu {
+    min-width: 12rem !important;
+    padding: 0;
+    position: absolute;
+}
+
+.sidebar{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	padding: 50px 0 0 ;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.1);
+	transition: all .5s ease-in-out
+}
+.sidebar .sidebar-sticky{
+	position: sticky;
+	top: 0;
+	height: calc(100vh - 50px);
+	padding-top: .5rem;
+	border-right: 1px solid #dfdfdf;
+	background-color: #040b14;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.sidebar .nav-sidebar>.nav-item {
+    width: 100%;
+}
+
+.sidebar .nav-link, .sidebar .dropdown-item {
+    padding: .7rem 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    background-color: transparent !important;
+}
+
+.sidebar .nav-link>i, .sidebar .dropdown-item>i {
+    margin-right: .5rem;
+    color: #fff;
+    width: 17px;
+    text-align: center;
+}
+.sidebar .dropdown-menu {
+    position: static;
+    margin-top: 0;
+    float: none;
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-left: 1rem;
+    box-shadow: none;
+}
+.main #main{
+	padding-top: 4rem;
+}
+.main #main .header{
+	width: 100%;
+	display: flex;
+}
+.main #main.header h1{
+	width: 50%;
+	text-align: left;
+}
+.main #main .header .buttons{
+	width: 30%;
+	text-align: right;
+	padding-right: 0
+}
+.gird-view{
+	width: 100%;
+	min-height: .01%;
+	overflow-x: auto;
+	-webkit-box-shadow: 0px 1px 15px 1px rgba(69,65,78,.08);
+    -moz-box-shadow: 0px 1px 15px 1px rgba(69,65,78,.08);
+    box-shadow: 0px 1px 15px 1px rgba(69,65,78,.08);
+    background-color: #fff;
+    padding: 2.2rem 1rem;
+}
